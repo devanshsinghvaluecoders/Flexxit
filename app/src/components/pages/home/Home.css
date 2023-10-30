@@ -1,0 +1,162 @@
+::-webkit-scrollbar {
+    display: none;
+}
+.posterImage{
+    height: 600px;
+}
+
+.posterImage > img {
+    margin: auto;
+    display: block;
+    width: 100%;
+    z-index: -11;
+}
+
+.posterImage__overlay {
+    position: absolute;
+    padding: 5rem;
+    bottom: 0px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1));
+    opacity: 1;
+    transition: opacity .3s;
+}   
+
+.posterImage__overlay:hover {
+    opacity: 1;
+}
+
+.posterImage__title {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 0.4rem;
+    text-align: left;
+}
+
+.posterImage__rating {
+    margin-left: 3rem;
+}
+
+.posterImage__description {
+    font-style: italic;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    display: flex;
+    text-align: left;
+    width: 50%;
+}
+.trailer-btn{
+    margin-top: 25px;
+}
+.trailer {
+    border-radius: 6px;
+    height: 55px;
+    color: #040714;
+    font-family: Helvetica;
+    width: 140px;
+    font-size: 28px;
+    font-weight: 600;
+    border: none;
+    padding-right: 20px;
+    background-color: #ffffffe0;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: right;
+    margin-right: 20px;
+ }
+ 
+ 
+ .trailer:hover {
+    background: rgba(255, 255, 255, 0.555);
+   color: #040714; 
+    text-decoration: none;
+ }
+.info {
+    border-radius: 6px;
+    height: 54px;
+    color: whitesmoke;
+    font-family: Helvetica;
+    width: 180px;
+    font-size: 28px;
+    font-weight: 500;
+    border: none;
+    background-color: #575757d2;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: right;
+    padding-right: 15px;
+ }
+ 
+ .info:hover {
+    color: white;
+    background: #040714d0;
+ }
+
+ @media (max-width: 480px) {
+    .posterImage__description{
+        justify-content: center;
+    }
+    .trailer-btn{
+        display: flex;
+    }
+    .trailer{
+        border-radius: 6px;
+        height: 40px;
+        color: #040714;
+        font-family: Helvetica;
+        width: 100px;
+        font-size: 20px;
+        font-weight: 600;
+        border: none;
+        padding-right: 20px;
+        background-color: #ffffffe0;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        text-align: right;
+        margin-right: 20px;
+    }
+    .info{
+        border-radius: 6px;
+        height: 45px;
+        color: whitesmoke;
+        font-family: Helvetica;
+        width: 150px;
+        font-size: 20px;
+        font-weight: 500;
+        border: none;
+        background-color: #575757d2;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        text-align: right;
+        padding-right: 15px;
+    }
+    .posterImage__description{
+        display: none;
+    }
+    .posterImage__title{
+        font-size: 2rem;
+    }
+    .posterImage__overlay {
+        position: absolute;
+        padding: 5rem;
+        bottom: 0px;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-end;
+        align-items: flex-start;
+        background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1));
+        opacity: 1;
+        transition: opacity .3s;
+    }  
+ }
